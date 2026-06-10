@@ -1,0 +1,96 @@
+/* =========================
+   NAVBAR - GLASS EFFECT
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  background: rgba(15, 15, 15, 0.4);
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+/* Scroll effect */
+.navbar.scrolled {
+  background: rgba(15, 15, 15, 0.9);
+  padding: 15px 10%;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Playfair Display';
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  position: relative;
+  font-weight: 500;
+  color: var(--light);
+  transition: 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.nav-links a.active {
+  color: var(--accent);
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--light);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(0,0,0,0.95);
+    width: 250px;
+    padding: 20px;
+    transition: 0.4s ease;
+    border-radius: 10px;
+  }
+
+  .nav-links.open {
+    right: 10%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

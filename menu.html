@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Savor & Flame</title>
+
+  <!-- GLOBAL STYLES -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+<header class="navbar">
+  <div class="logo">Savor & Flame</div>
+  <div class="menu-toggle">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="location.html">Location</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- =========================
+     MENU HERO
+========================= -->
+<section class="menu-hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content hidden">
+    <h1>Our Menu</h1>
+    <p>Crafted with passion. Served with perfection.</p>
+  </div>
+</section>
+
+<!-- =========================
+     CATEGORY NAV
+========================= -->
+<section class="menu-nav">
+  <div class="container">
+
+    <div class="menu-buttons">
+      <button class="menu-btn active" data-target="appetizers">Appetizers</button>
+      <button class="menu-btn" data-target="burgers">Burgers</button>
+      <button class="menu-btn" data-target="pasta">Pasta</button>
+      <button class="menu-btn" data-target="steaks">Steaks</button>
+      <button class="menu-btn" data-target="chicken">Chicken</button>
+      <button class="menu-btn" data-target="desserts">Desserts</button>
+      <button class="menu-btn" data-target="drinks">Drinks</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================
+     MENU ITEMS
+========================= -->
+
+<!-- APPETIZERS -->
+<section class="menu-section active" id="appetizers">
+  <div class="container">
+    <h2>Appetizers</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/calamari.jpeg" alt="Crispy Calamari">
+        <h3>Crispy Calamari</h3>
+        <span class="price">₱280</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/loaded-fries.jpeg" alt="Loaded Fries">
+        <h3>Loaded Fries</h3>
+        <span class="price">₱220</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/mozzarella-sticks.jpeg" alt="Mozzarella Sticks">
+        <h3>Mozzarella Sticks</h3>
+        <span class="price">₱250</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/chicken-wings.jpeg" alt="Chicken Wings">
+        <h3>Chicken Wings</h3>
+        <span class="price">₱320</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BURGERS -->
+<section class="menu-section" id="burgers">
+  <div class="container">
+    <h2>Burgers</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/cheeseburger.jpeg" alt="Classic Cheeseburger">
+        <h3>Classic Cheeseburger</h3>
+        <span class="price">₱350</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/bacon-bbq-burger.jpeg" alt="Bacon BBQ Burger">
+        <h3>Bacon BBQ Burger</h3>
+        <span class="price">₱390</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/double-flame-burger.jpeg" alt="Double Flame Burger">
+        <h3>Double Flame Burger</h3>
+        <span class="price">₱450</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/mushroom-swiss.jpeg" alt="Mushroom Swiss Burger">
+        <h3>Mushroom Swiss Burger</h3>
+        <span class="price">₱410</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PASTA -->
+<section class="menu-section" id="pasta">
+  <div class="container">
+    <h2>Pasta</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/truffle-pasta.jpeg" alt="Creamy Truffle Pasta">
+        <h3>Creamy Truffle Pasta</h3>
+        <span class="price">₱380</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/carbonara.jpeg" alt="Carbonara">
+        <h3>Carbonara</h3>
+        <span class="price">₱350</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/bolognese.jpeg" alt="Spaghetti Bolognese">
+        <h3>Spaghetti Bolognese</h3>
+        <span class="price">₱340</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/seafood-alfredo.jpeg" alt="Seafood Alfredo">
+        <h3>Seafood Alfredo</h3>
+        <span class="price">₱420</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STEAKS -->
+<section class="menu-section" id="steaks">
+  <div class="container">
+    <h2>Steaks</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/ribeye.jpeg" alt="Ribeye Steak">
+        <h3>Ribeye Steak</h3>
+        <span class="price">₱950</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/sirloin.jpeg" alt="Sirloin Steak">
+        <h3>Sirloin Steak</h3>
+        <span class="price">₱790</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/tbone.jpeg" alt="T-Bone Steak">
+        <h3>T-Bone Steak</h3>
+        <span class="price">₱1150</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHICKEN -->
+<section class="menu-section" id="chicken">
+  <div class="container">
+    <h2>Chicken</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/grilled-chicken.jpeg" alt="Grilled Chicken Plate">
+        <h3>Grilled Chicken Plate</h3>
+        <span class="price">₱420</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/chicken-parmesan.jpeg" alt="Chicken Parmesan">
+        <h3>Chicken Parmesan</h3>
+        <span class="price">₱450</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/honey-garlic-chicken.jpeg" alt="Honey Garlic Chicken">
+        <h3>Honey Garlic Chicken</h3>
+        <span class="price">₱430</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DESSERTS -->
+<section class="menu-section" id="desserts">
+  <div class="container">
+    <h2>Desserts</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/lava-cake.jpeg" alt="Chocolate Lava Cake">
+        <h3>Chocolate Lava Cake</h3>
+        <span class="price">₱220</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/cheesecake.jpeg" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <span class="price">₱210</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/brownie-sundae.jpeg" alt="Brownie Sundae">
+        <h3>Brownie Sundae</h3>
+        <span class="price">₱250</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DRINKS -->
+<section class="menu-section" id="drinks">
+  <div class="container">
+    <h2>Drinks</h2>
+
+    <div class="menu-grid">
+
+      <div class="item hidden">
+        <img src="images/iced-tea.jpeg" alt="Iced Tea">
+        <h3>Iced Tea</h3>
+        <span class="price">₱120</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/lemonade.jpeg" alt="Lemonade">
+        <h3>Lemonade</h3>
+        <span class="price">₱140</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/coffee.jpeg" alt="Coffee">
+        <h3>Coffee</h3>
+        <span class="price">₱130</span>
+      </div>
+
+      <div class="item hidden">
+        <img src="images/milkshake.jpeg" alt="Milkshake">
+        <h3>Milkshake</h3>
+        <span class="price">₱180</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FULL MENU IMAGE -->
+<section class="menu-image">
+  <div class="container">
+    <h2 class="hidden">Full Menu Overview</h2>
+    <img src="images/full-menu.jpeg" alt="Full Menu" class="hidden" />
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div>
+      <h3>Savor & Flame</h3>
+      <p>Modern dining experience with premium taste.</p>
+    </div>
+
+    <div>
+      <h3>Pages</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="location.html">Location</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>Tagaytay City, Philippines</p>
+      <p>+63 912 345 6789</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Savor & Flame. All rights reserved.
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/navigation.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>

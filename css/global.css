@@ -1,0 +1,133 @@
+/* =========================
+   GLOBAL STYLES
+   Million-Dollar Restaurant UI Base
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary: #C97A40;
+  --accent: #E8B16A;
+  --dark: #0F0F0F;
+  --dark-2: #161616;
+  --light: #F5F5F5;
+  --gray: #b8b8b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  overflow-x: hidden;
+}
+
+/* Smooth section spacing */
+section {
+  padding: 80px 10%;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--light);
+}
+
+/* Paragraph */
+p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section fade base (for JS animation) */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   SCROLL REVEAL ANIMATION
+========================= */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   PAGE FADE TRANSITION
+========================= */
+
+body {
+  transition: opacity 0.4s ease;
+}
+
+.page-fade-out {
+  opacity: 0;
+}
+
+/* =========================
+   NAVBAR SCROLL STATE
+========================= */
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
