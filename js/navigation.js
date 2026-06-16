@@ -45,6 +45,25 @@ document.querySelectorAll("a[href]").forEach(link => {
 });
 
 /* =========================
+   3. MOBILE MENU TOGGLE
+========================= */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+// Toggle menu when hamburger is clicked
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+
+// Close menu when a nav link is clicked
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+  });
+});
+
+/* =========================
    3. NAVBAR SCROLL EFFECT
 ========================= */
 
